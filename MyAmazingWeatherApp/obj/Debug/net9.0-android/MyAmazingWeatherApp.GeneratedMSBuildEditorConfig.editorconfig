@@ -12,37 +12,37 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyAmazingWeatherApp
-build_property.ProjectDir = C:\Users\Yaroslav\OneDrive - University of Information Technology and Management in Rzeszow\inop\bank\MyAmazingWeatherApp\
+build_property.ProjectDir = C:\Users\Yaroslav\source\repos\counter\MyAmazingWeatherApp\MyAmazingWeatherApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Yaroslav/OneDrive - University of Information Technology and Management in Rzeszow/inop/bank/MyAmazingWeatherApp/App.xaml]
+[C:/Users/Yaroslav/source/repos/counter/MyAmazingWeatherApp/MyAmazingWeatherApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Yaroslav/OneDrive - University of Information Technology and Management in Rzeszow/inop/bank/MyAmazingWeatherApp/AppShell.xaml]
+[C:/Users/Yaroslav/source/repos/counter/MyAmazingWeatherApp/MyAmazingWeatherApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Yaroslav/OneDrive - University of Information Technology and Management in Rzeszow/inop/bank/MyAmazingWeatherApp/MainPage.xaml]
+[C:/Users/Yaroslav/source/repos/counter/MyAmazingWeatherApp/MyAmazingWeatherApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Yaroslav/OneDrive - University of Information Technology and Management in Rzeszow/inop/bank/MyAmazingWeatherApp/Resources/Styles/Colors.xaml]
+[C:/Users/Yaroslav/source/repos/counter/MyAmazingWeatherApp/MyAmazingWeatherApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Yaroslav/OneDrive - University of Information Technology and Management in Rzeszow/inop/bank/MyAmazingWeatherApp/Resources/Styles/Styles.xaml]
+[C:/Users/Yaroslav/source/repos/counter/MyAmazingWeatherApp/MyAmazingWeatherApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

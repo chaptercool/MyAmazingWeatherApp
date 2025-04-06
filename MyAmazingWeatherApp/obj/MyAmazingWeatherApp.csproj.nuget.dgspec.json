@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj": {}
+    "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj": {
+    "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
+        "projectUniqueName": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
         "projectName": "MyAmazingWeatherApp",
-        "projectPath": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
+        "projectPath": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
         "packagesPath": "C:\\Users\\Yaroslav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\obj\\",
+        "outputPath": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

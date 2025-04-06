@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\onedrive - university of information technology and management in rzeszow\\inop\\bank\\myamazingweatherapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\onedrive - university of information technology and management in rzeszow\\inop\\bank\\myamazingweatherapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\onedrive - university of information technology and management in rzeszow\\inop\\bank\\myamazingweatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T14:23:44.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T14:23:33.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml*",
+              "RelativeToolTip": "MainPage.xaml*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-04T13:23:12.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T14:07:37.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAEwBAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCAAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T13:47:23.973Z",
               "EditorCaption": ""

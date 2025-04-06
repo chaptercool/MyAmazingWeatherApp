@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GZgISC1KNAM=",
+  "dgSpecHash": "JEIIDl1sJRo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yaroslav\\OneDrive - University of Information Technology and Management in Rzeszow\\inop\\bank\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
+  "projectFilePath": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yaroslav\\.nuget\\packages\\googlegson\\2.11.0.3\\googlegson.2.11.0.3.nupkg.sha512",
     "C:\\Users\\Yaroslav\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
