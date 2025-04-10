@@ -42,8 +42,7 @@
               "RelativeToolTip": "App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-06T14:23:44.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T14:23:44.702Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:23:33.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T14:23:33.271Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "MainPage.xaml",
               "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-04T13:23:12.398Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "MainPage.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowCAAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T13:47:23.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T13:47:23.973Z"
             }
           ]
         }
