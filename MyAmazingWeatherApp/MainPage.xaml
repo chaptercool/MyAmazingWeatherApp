@@ -110,7 +110,8 @@
                 </VerticalStackLayout>
             </Border>
             <!--szczegoly tego dnia-->
-            <Grid ColumnDefinitions="*, *" RowDefinitions="*" ColumnSpacing="10" RowSpacing="10">
+            <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *" ColumnSpacing="10" RowSpacing="10">
+                <!-- indeks uv-->
                 <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="0" Grid.Row="0">
                     <VerticalStackLayout
                         WidthRequest="160"
@@ -121,7 +122,7 @@
                         VerticalOptions="Start"
                         Spacing="5"
                         Padding="10">
-                        <!-- Treść kafelka -->
+                        
                         <Label Text="UV Index" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
                         <Label Text="2" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
                         <Image Source="okulary.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
@@ -129,6 +130,7 @@
                     </VerticalStackLayout>
                 </Border>
 
+                <!-- jakość powietrza-->
                 <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="1" Grid.Row="0">
                     <VerticalStackLayout
                         WidthRequest="160"
@@ -139,13 +141,71 @@
                         VerticalOptions="Start"
                         Spacing="5"
                         Padding="10">
-                        <!-- Treść kafelka -->
+
                         <Label Text="AQI" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
                         <Label Text="15" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
                         <Image Source="liscie.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
                         <Label Text="Normal air quality" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
                     </VerticalStackLayout>
                 </Border>
+
+                <!-- wilgotnosc -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="0" Grid.Row="1">
+                    <VerticalStackLayout
+                        WidthRequest="160"
+                        HeightRequest="160"
+                        MaximumHeightRequest="160"
+                        MaximumWidthRequest="160"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        Spacing="5"
+                        Padding="10">
+
+                        <Label Text="Humidity" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+                        <Label Text="54%" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+                        <Image Source="kropla.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
+                        <Label Text="Mid humidity" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
+                    </VerticalStackLayout>
+                </Border>
+                
+                <!-- wschod/zachod slonca-->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="1" Grid.Row="1">
+                    <VerticalStackLayout
+                        WidthRequest="160"
+                        HeightRequest="160"
+                        MaximumHeightRequest="160"
+                        MaximumWidthRequest="160"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        Spacing="5"
+                        Padding="10">
+
+                        <Label Text="Sunset" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+                        <Label Text="18:49" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+                        <Image Source="zachod.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
+                        <Label Text="Sunrise at 6:54" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- wiatr -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="0" Grid.Row="2">
+                    <VerticalStackLayout
+                        WidthRequest="160"
+                        HeightRequest="160"
+                        MaximumHeightRequest="160"
+                        MaximumWidthRequest="160"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        Spacing="5"
+                        Padding="10">
+
+                        <Label Text="Wind speed" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+                        <Label Text="12 km/h" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="34" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+                        <Image Source="wiatr.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
+                        <Label Text="Strong wind" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
+                    </VerticalStackLayout>
+                </Border>
+
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
