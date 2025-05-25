@@ -28,6 +28,34 @@
     <Color x:Key="Gray900">#212121</Color>
     <Color x:Key="Gray950">#141414</Color>
 
+    <Color x:Key="SunnyBgStart">#90D5FF</Color>
+    <Color x:Key="SunnyBgEnd">#08C0FF</Color>
+
+    <Color x:Key="CloudyBgStart">#D9D9D9</Color>
+    <Color x:Key="CloudyBgEnd">#B3B1B1</Color>
+
+    <Color x:Key="RainyBgStart">#78C0C9</Color>
+    <Color x:Key="RainyBgEnd">#AFAFAF</Color>
+
+    <Color x:Key="StormBgStart">#A7A7A7</Color>
+    <Color x:Key="StormBgEnd">#787878</Color>
+
+    <Color x:Key="FogBgStart">#ADADAD</Color>
+    <Color x:Key="FogBgEnd">#999999</Color>
+
+    <Color x:Key="SnowBgStart">#F0F0F0</Color>
+    <Color x:Key="SnowBgEnd">#D9D9D9</Color>
+
+    <Color x:Key="WindyBgStart">#B0C4DE</Color>
+    <Color x:Key="WindyBgEnd">#ADD8E6</Color>
+
+    <Color x:Key="Sun-CloudBgStart">#87CEFA</Color>
+    <Color x:Key="Sun-CloudBgEnd">#AFD4EB</Color>
+
+    <Color x:Key="ClearNightBgStart">#343C83</Color>
+    <Color x:Key="ClearNightBgEnd">#4D4D85</Color>
+
+
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
     <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>

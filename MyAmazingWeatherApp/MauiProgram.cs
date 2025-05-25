@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using MyAmazingWeatherApp.ViewModels;
+using MyAmazingWeatherApp.Services;
+
 
 namespace MyAmazingWeatherApp;
 
@@ -16,6 +19,10 @@ public static class MauiProgram
                 fonts.AddFont("Inter-Variable.ttf", "InterVariable");
                 fonts.AddFont("Inter-Italic-Variable.ttf", "InterItalicVariable");
             });
+        builder.Services.AddSingleton<MainPageViewModel>();
+        builder.Services.AddSingleton<IWeatherService, WeatherService>();
+
+
 
 #if DEBUG
         builder.Logging.AddDebug();

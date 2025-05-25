@@ -1,212 +1,205 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
-            x:Class="MyAmazingWeatherApp.MainPage">
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyAmazingWeatherApp.MainPage"
+    x:Name="PageRoot">
 
     <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Default">
         <ScrollView.Background>
+            <!-- you can replace this with a GradientBrush via converter -->
             <LinearGradientBrush EndPoint="0,1">
-                <GradientStop Color="LightSkyBlue" Offset="0.1"/>
-                <GradientStop Color="DeepSkyBlue" Offset="1.0"/>
+                <GradientStop Color="{StaticResource SunnyBgStart}" Offset="0.1" />
+                <GradientStop Color="{StaticResource SunnyBgEnd}"   Offset="1.0" />
             </LinearGradientBrush>
         </ScrollView.Background>
-        <VerticalStackLayout  
-           Padding="0, 0, 0, 30"
-           Margin="40, 40, 40, 0"  
-           Spacing="10">
 
-            <Label Text="Warsaw" FontFamily="InterVariable" FontSize="Title" HorizontalOptions="Start" TextColor="White"/>
+        <VerticalStackLayout Padding="0,0,0,30" Margin="40,40,40,0" Spacing="10">
 
-            <Grid RowDefinitions="*" ColumnDefinitions="*, *">
-                <Label Text="26°" FontFamily="InterVariable" FontSize="72" HorizontalOptions="Start" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="0"/>
-                <Image Source="slonce.png" Grid.Column="1" Grid.Row="0" HorizontalOptions="End" MaximumWidthRequest="90" VerticalOptions="End"/>
+            <!-- 1. City name -->
+            <Label
+        Text="{Binding CityName}"
+        FontFamily="InterVariable"
+        FontSize="Title"
+        TextColor="White"
+        HorizontalOptions="Start" />
+
+            <!-- 2. Current temp + icon -->
+            <Grid RowDefinitions="*" ColumnDefinitions="*,*">
+                <Label
+          Text="{Binding CurrentTemperature}"
+          FontFamily="InterVariable"
+          FontSize="72"
+          FontAttributes="Bold"
+          TextColor="White"
+          HorizontalOptions="Start"
+          Grid.Column="0" />
+                <Image
+          Source="{Binding CurrentCondition, Converter={StaticResource ConditionToIconConverter}}"
+          MaximumWidthRequest="90"
+          VerticalOptions="End"
+          HorizontalOptions="End"
+          Grid.Column="1" />
             </Grid>
 
-            <Label Text="Sunny" FontFamily="InterVariable" FontSize="Small" HorizontalOptions="Start" TextColor="White" Margin="0, 0, 0, 10"/>
+            <!-- 3. Current condition text -->
+            <Label
+        Text="{Binding CurrentCondition}"
+        FontFamily="InterVariable"
+        FontSize="Small"
+        TextColor="White"
+        Margin="0,0,0,10"
+        HorizontalOptions="Start" />
 
+            <!-- 4. Offline warning -->
+            <Label
+        Text="⚠️ Data may be out of date (offline mode)"
+        IsVisible="{Binding IsDataStale}"
+        TextColor="OrangeRed"
+        FontAttributes="Italic" />
+
+            <!-- 5. Hourly forecast carousel -->
             <Border StrokeShape="RoundRectangle 20" StrokeThickness="0" Background="#404040FF" Padding="10">
-                <CollectionView ItemsSource="{Binding WeatherItems}" HorizontalScrollBarVisibility="Never" ItemSizingStrategy="MeasureFirstItem">
+                <CollectionView
+          ItemsSource="{Binding HourlyForecasts}"
+          HorizontalScrollBarVisibility="Never"
+          ItemSizingStrategy="MeasureFirstItem">
                     <CollectionView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Horizontal"  
-                                          ItemSpacing="10"  
-                                          />
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10" />
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout VerticalOptions="Center" Margin="5">
-                                <Label Text="{Binding Temperature}" FontFamily="InterVariable" TextColor="White" HorizontalOptions="Center" Margin="0, 0, 0, 5"/>
-                                <Image Source="{Binding Icon}" MaximumHeightRequest="30" MaximumWidthRequest="30"/>
-                                <Label Text="{Binding Time}" FontFamily="InterVariable" TextColor="White" HorizontalOptions="Center" Margin="0, 5, 0, 0"/>
+                                <Label
+                  Text="{Binding Temperature}"
+                  FontFamily="InterVariable"
+                  TextColor="White"
+                  HorizontalOptions="Center"
+                  Margin="0,0,0,5" />
+                                <Image
+                  Source="{Binding Icon}"
+                  MaximumHeightRequest="30"
+                  MaximumWidthRequest="30" />
+                                <Label
+                  Text="{Binding Time}"
+                  FontFamily="InterVariable"
+                  TextColor="White"
+                  HorizontalOptions="Center"
+                  Margin="0,5,0,0" />
                             </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </Border>
-            <!--podoga na tydzien do przodu-->
+
+            <!-- 6. 7-day forecast list -->
             <Border StrokeShape="RoundRectangle 20" StrokeThickness="0" Background="#404040FF" Padding="10">
-                <VerticalStackLayout>
-                    <!-- przyklad dnia-->
-                    <Grid ColumnDefinitions="Auto, *, Auto, Auto" Margin="8, 8, 8, 8" ColumnSpacing="10">
-                        <Image Source="deszcz.png" MaximumHeightRequest="20" Margin="7, 0, 0, 0" Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="Tuesday" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="1" VerticalOptions="Center"/>
-                        <Label Text="-6°" FontFamily="InterVariable" TextColor="#F0F0F0" FontSize="18" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
-                        <Label Text="12°" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                    </Grid>
-
-                    <!-- separator -->
-                    <BoxView HeightRequest="2" Color="#404040FF" Margin="15, 5, 15, 5"/>
-
-                    <Grid ColumnDefinitions="Auto, *, Auto, Auto" Margin="8, 8, 8, 8" ColumnSpacing="10">
-                        <Image Source="burza.png" MaximumHeightRequest="20" Margin="7, 0, 0, 0" Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="Wednesday" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="1" VerticalOptions="Center"/>
-                        <Label Text="0°" FontFamily="InterVariable" TextColor="#F0F0F0" FontSize="18" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
-                        <Label Text="15°" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                    </Grid>
-
-                    <BoxView HeightRequest="2" Color="#404040FF" Margin="15, 5, 15, 5"/>
-
-                    <Grid ColumnDefinitions="Auto, *, Auto, Auto" Margin="8, 8, 8, 8" ColumnSpacing="10">
-                        <Image Source="slonce.png" MaximumHeightRequest="20" Margin="7, 0, 0, 0" Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="Thursday" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="1" VerticalOptions="Center"/>
-                        <Label Text="3°" FontFamily="InterVariable" TextColor="#F0F0F0" FontSize="18" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
-                        <Label Text="10°" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                    </Grid>
-
-                    <BoxView HeightRequest="2" Color="#404040FF" Margin="15, 5, 15, 5"/>
-
-                    <Grid ColumnDefinitions="Auto, *, Auto, Auto" Margin="8, 8, 8, 8" ColumnSpacing="10">
-                        <Image Source="mgla.png" MaximumHeightRequest="20" Margin="7, 0, 0, 0" Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="Friday" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="1" VerticalOptions="Center"/>
-                        <Label Text="-7°" FontFamily="InterVariable" TextColor="#F0F0F0" FontSize="18" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
-                        <Label Text="3°" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                    </Grid>
-
-                    <BoxView HeightRequest="2" Color="#404040FF" Margin="15, 5, 15, 5"/>
-
-                    <Grid ColumnDefinitions="Auto, *, Auto, Auto" Margin="8, 8, 8, 8" ColumnSpacing="10">
-                        <Image Source="mgla_slonce.png" MaximumHeightRequest="20" Margin="7, 0, 0, 0" Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="Saturday" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="1" VerticalOptions="Center"/>
-                        <Label Text="3°" FontFamily="InterVariable" TextColor="#F0F0F0" FontSize="18" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
-                        <Label Text="7°" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                    </Grid>
-
-                    <BoxView HeightRequest="2" Color="#404040FF" Margin="15, 5, 15, 5"/>
-
-                    <Grid ColumnDefinitions="Auto, *, Auto, Auto" Margin="8, 8, 8, 8" ColumnSpacing="10">
-                        <Image Source="snieg.png" MaximumHeightRequest="20" Margin="7, 0, 0, 0" Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="Sunday" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="1" VerticalOptions="Center"/>
-                        <Label Text="-5°" FontFamily="InterVariable" TextColor="#F0F0F0" FontSize="18" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
-                        <Label Text="-1°" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                    </Grid>
-
-                    <BoxView HeightRequest="2" Color="#404040FF" Margin="15, 5, 15, 5"/>
-
-                    <Grid ColumnDefinitions="Auto, *, Auto, Auto" Margin="8, 8, 8, 8" ColumnSpacing="10">
-                        <Image Source="slonce.png" MaximumHeightRequest="20" Margin="7, 0, 0, 0" Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="Monday" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="1" VerticalOptions="Center"/>
-                        <Label Text="4°" FontFamily="InterVariable" TextColor="#F0F0F0" FontSize="18" Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center"/>
-                        <Label Text="8°" FontFamily="InterVariable" TextColor="White" FontSize="18" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                    </Grid>
-                </VerticalStackLayout>
+                <CollectionView ItemsSource="{Binding DailyForecasts}">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="2" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="Auto,*,Auto,Auto" ColumnSpacing="10" Margin="8">
+                                <Image
+                  Source="{Binding Icon}"
+                  MaximumHeightRequest="20"
+                  VerticalOptions="Center"
+                  Grid.Column="0" />
+                                <Label
+                  Text="{Binding Day}"
+                  FontFamily="InterVariable"
+                  TextColor="White"
+                  FontSize="18"
+                  VerticalOptions="Center"
+                  Grid.Column="1" />
+                                <Label
+                  Text="{Binding MinTemperature}"
+                  FontFamily="InterVariable"
+                  TextColor="#F0F0F0"
+                  FontSize="18"
+                  HorizontalOptions="End"
+                  VerticalOptions="Center"
+                  Grid.Column="2" />
+                                <Label
+                  Text="{Binding MaxTemperature}"
+                  FontFamily="InterVariable"
+                  TextColor="White"
+                  FontSize="18"
+                  HorizontalOptions="End"
+                  VerticalOptions="Center"
+                  Grid.Column="3" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </Border>
-            <!--szczegoly tego dnia-->
-            <Grid ColumnDefinitions="*, *" RowDefinitions="*, *, *" ColumnSpacing="10" RowSpacing="10">
-                <!-- indeks uv-->
-                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="0" Grid.Row="0">
-                    <VerticalStackLayout
-                        WidthRequest="160"
-                        HeightRequest="160"
-                        MaximumHeightRequest="160"
-                        MaximumWidthRequest="160"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        Spacing="5"
-                        Padding="10">
-                        
-                        <Label Text="UV Index" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Label Text="2" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Image Source="okulary.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
-                        <Label Text="Normal" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
+
+            <!-- 7. Detailed cards -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*" ColumnSpacing="10" RowSpacing="10">
+
+                <!-- UV Index -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Background="#404040FF" Grid.Column="0" Grid.Row="0">
+                    <VerticalStackLayout Spacing="5" Padding="10" WidthRequest="160" HeightRequest="160">
+                        <Label Text="UV Index" FontFamily="InterVariable" FontSize="16" TextColor="White" />
+                        <Label Text="{Binding UvIndex}" FontFamily="InterVariable" FontSize="Header" FontAttributes="Bold" TextColor="White" />
+                        <Image Source="glasses.svg" MaximumHeightRequest="20" />
+                        <Label Text="Normal" FontFamily="InterVariable" FontSize="14" TextColor="#F0F0F0" />
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- jakość powietrza-->
-                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="1" Grid.Row="0">
-                    <VerticalStackLayout
-                        WidthRequest="160"
-                        HeightRequest="160"
-                        MaximumHeightRequest="160"
-                        MaximumWidthRequest="160"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        Spacing="5"
-                        Padding="10">
-
-                        <Label Text="AQI" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Label Text="15" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Image Source="liscie.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
-                        <Label Text="Normal air quality" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
+                <!-- Feels Like -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Background="#404040FF" Grid.Column="1" Grid.Row="0">
+                    <VerticalStackLayout Spacing="5" Padding="10" WidthRequest="160" HeightRequest="160">
+                        <Label Text="Feels Like" FontFamily="InterVariable" FontSize="16" TextColor="White" />
+                        <Label Text="{Binding FeelsLike}" FontFamily="InterVariable" FontSize="Header" FontAttributes="Bold" TextColor="White" />
+                        <Image Source="temp.svg" MaximumHeightRequest="20" />
+                        <Label Text="Colder than expected" FontFamily="InterVariable" FontSize="14" TextColor="#F0F0F0" />
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- wilgotnosc -->
-                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="0" Grid.Row="1">
-                    <VerticalStackLayout
-                        WidthRequest="160"
-                        HeightRequest="160"
-                        MaximumHeightRequest="160"
-                        MaximumWidthRequest="160"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        Spacing="5"
-                        Padding="10">
-
-                        <Label Text="Humidity" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Label Text="54%" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Image Source="kropla.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
-                        <Label Text="Mid humidity" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
-                    </VerticalStackLayout>
-                </Border>
-                
-                <!-- wschod/zachod slonca-->
-                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="1" Grid.Row="1">
-                    <VerticalStackLayout
-                        WidthRequest="160"
-                        HeightRequest="160"
-                        MaximumHeightRequest="160"
-                        MaximumWidthRequest="160"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        Spacing="5"
-                        Padding="10">
-
-                        <Label Text="Sunset" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Label Text="18:49" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="Header" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Image Source="zachod.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
-                        <Label Text="Sunrise at 6:54" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
+                <!-- Humidity -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Background="#404040FF" Grid.Column="0" Grid.Row="1">
+                    <VerticalStackLayout Spacing="5" Padding="10" WidthRequest="160" HeightRequest="160">
+                        <Label Text="Humidity" FontFamily="InterVariable" FontSize="16" TextColor="White" />
+                        <Label Text="{Binding Humidity}" FontFamily="InterVariable" FontSize="Header" FontAttributes="Bold" TextColor="White" />
+                        <Image Source="drop.svg" MaximumHeightRequest="20" />
+                        <Label Text="Mid humidity" FontFamily="InterVariable" FontSize="14" TextColor="#F0F0F0" />
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- wiatr -->
-                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Stroke="#404040FF" Background="#404040FF" Grid.Column="0" Grid.Row="2">
-                    <VerticalStackLayout
-                        WidthRequest="160"
-                        HeightRequest="160"
-                        MaximumHeightRequest="160"
-                        MaximumWidthRequest="160"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        Spacing="5"
-                        Padding="10">
+                <!-- Precipitation -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Background="#404040FF" Grid.Column="1" Grid.Row="1">
+                    <VerticalStackLayout Spacing="5" Padding="10" WidthRequest="160" HeightRequest="160">
+                        <Label Text="Precipitations" FontFamily="InterVariable" FontSize="16" TextColor="White" />
+                        <Label Text="{Binding PrecipitationProbability}" FontFamily="InterVariable" FontSize="Header" FontAttributes="Bold" TextColor="White" />
+                        <Image Source="umbrella.svg" MaximumHeightRequest="20" />
+                        <Label Text="Chance of rain" FontFamily="InterVariable" FontSize="14" TextColor="#F0F0F0" />
+                    </VerticalStackLayout>
+                </Border>
 
-                        <Label Text="Wind speed" TextColor="White" FontFamily="InterVariable" FontSize="16" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Label Text="12 km/h" FontAttributes="Bold" TextColor="White" FontFamily="InterVariable" FontSize="34" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
-                        <Image Source="wiatr.png" MaximumHeightRequest="20" HorizontalOptions="Start"/>
-                        <Label Text="Strong wind" TextColor="#F0F0F0" FontFamily="InterVariable" FontSize="14" HorizontalTextAlignment="Start" VerticalOptions="End"/>
+                <!-- Wind Speed -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Background="#404040FF" Grid.Column="0" Grid.Row="2">
+                    <VerticalStackLayout Spacing="5" Padding="10" WidthRequest="160" HeightRequest="160">
+                        <Label Text="Wind Speed" FontFamily="InterVariable" FontSize="16" TextColor="White" />
+                        <Label Text="{Binding WindSpeed}" FontFamily="InterVariable" FontSize="34" FontAttributes="Bold" TextColor="White" />
+                        <Image Source="wind.svg" MaximumHeightRequest="20" />
+                        <Label Text="Strong wind" FontFamily="InterVariable" FontSize="14" TextColor="#F0F0F0" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Pressure -->
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" Background="#404040FF" Grid.Column="1" Grid.Row="2">
+                    <VerticalStackLayout Spacing="5" Padding="10" WidthRequest="160" HeightRequest="160">
+                        <Label Text="Pressure" FontFamily="InterVariable" FontSize="16" TextColor="White" />
+                        <Label Text="{Binding Pressure}" FontFamily="InterVariable" FontSize="Header" FontAttributes="Bold" TextColor="White" />
+                        <Image Source="leaves.svg" MaximumHeightRequest="20" />
+                        <Label Text="Normal" FontFamily="InterVariable" FontSize="14" TextColor="#F0F0F0" />
                     </VerticalStackLayout>
                 </Border>
 
             </Grid>
+
         </VerticalStackLayout>
     </ScrollView>
 

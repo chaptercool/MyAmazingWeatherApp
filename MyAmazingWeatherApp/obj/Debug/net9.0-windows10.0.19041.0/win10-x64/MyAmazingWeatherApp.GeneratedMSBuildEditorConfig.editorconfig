@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.AppShe
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/Yaroslav/source/repos/counter/MyAmazingWeatherApp/MyAmazingWeatherApp/LocationsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.LocationsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LocationsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LocationsPage.xaml
+
 [C:/Users/Yaroslav/source/repos/counter/MyAmazingWeatherApp/MyAmazingWeatherApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyAmazingWeatherApp.MainPage.xaml

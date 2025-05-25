@@ -1,38 +1,29 @@
 ﻿using System.Collections.ObjectModel;
+using MyAmazingWeatherApp.ViewModels;
+using MyAmazingWeatherApp.Models;
 
 namespace MyAmazingWeatherApp
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        readonly MainPageViewModel _vm;
 
-        public MainPage()
+        public MainPage(MainPageViewModel vm)
         {
             InitializeComponent();
-            BindingContext = this;
+            BindingContext = _vm = vm;
         }
 
-        public class WeatherItem
+        protected override void OnAppearing() // Moved this method inside the class
         {
-            public string Temperature { get; set; }
-            public string Icon { get; set; }
-            public string Time { get; set; }
+            base.OnAppearing();
+            // Example: default to Warsaw
+            _vm.LoadWeatherCommand.Execute(new City
+            {
+                Name = "Warsaw",
+                Lat = 52.2297,
+                Lon = 21.0122
+            });
         }
-
-        public ObservableCollection<WeatherItem> WeatherItems { get; set; } = new ObservableCollection<WeatherItem>
-        {
-            new WeatherItem { Temperature = "6°", Icon = "burza.png", Time = "12:00" },
-            new WeatherItem { Temperature = "7°", Icon = "mgla_slonce.png", Time = "13:00" },
-            new WeatherItem { Temperature = "8°", Icon = "snieg.png", Time = "14:00" },
-            new WeatherItem { Temperature = "10°", Icon = "slonce.png", Time = "15:00" },
-            new WeatherItem { Temperature = "9°", Icon = "deszcz.png", Time = "16:00" },
-            new WeatherItem { Temperature = "12°", Icon = "snieg.png", Time = "17:00" },
-            new WeatherItem { Temperature = "12°", Icon = "snieg.png", Time = "18:00" },
-            new WeatherItem { Temperature = "12°", Icon = "snieg.png", Time = "19:00" },
-            new WeatherItem { Temperature = "12°", Icon = "snieg.png", Time = "20:00" },
-            new WeatherItem { Temperature = "12°", Icon = "snieg.png", Time = "21:00" },
-        };
-
     }
-
 }
