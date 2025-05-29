@@ -6,57 +6,51 @@ namespace MyAmazingWeatherApp.Converters
 {
     public class ConditionToIconConverter : IValueConverter
     {
-        // Map your condition strings (or codes) to the correct SVG/PNG filename.
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is string condition)
             {
-                // normalize
                 var key = condition.Trim().ToLowerInvariant();
                 return key switch
                 {
-                    "sunny" => "sun.svg",
-                    "clear" => "sun.svg",
+                    "sunny" => "sun.png",
+                    "clear" => "sun.png",
                     "partly cloudy"
-                                 => "sun-cloud.svg",
-                    "cloudy" => "fog_sun.svg",
-                    "overcast" => "fog.svg",
-                    "rain" => "rain.svg",
+                                 => "sun-cloud.png",
+                    "cloudy" => "fog_sun.png",
+                    "overcast" => "fog.png",
+                    "rain" => "rain.png",
                     "thunderstorms"
-                                 => "thunderstorms.svg",
-                    "snow" => "snow.svg",
-                    "fog" => "fog.svg",
-                    "windy" => "wind.svg",
-                    _ => "sun-cloud.svg",
+                                 => "thunderstorms.png",
+                    "snow" => "snow.png",
+                    "fog" => "fog.png",
+                    "windy" => "wind.png",
+                    _ => "sun-cloud.png",
                 };
             }
 
-            // Fallback if you ever bind an int weather code instead:
             if (value is int code)
             {
-                // Example based on Open-Meteo codes:
                 return code switch
                 {
-                    0 => "sun.svg",          // clear sky
-                    1 => "sun-cloud.svg",     // mainly clear
-                    2 => "sun-cloud.svg",     // partly cloudy
-                    3 => "fog.svg",           // overcast
+                    0 => "sun.png",
+                    1 => "sun-cloud.png",
+                    2 => "sun-cloud.png",
+                    3 => "fog.png",
                     >= 45 and <= 48
-                       => "fog.svg",           // fog
+                       => "fog.png",
                     >= 51 and <= 57
-                       => "rain.svg",          // drizzle
+                       => "rain.png",
                     >= 61 and <= 67
-                       => "rain.svg",          // rain
+                       => "rain.png",
                     >= 71 and <= 77
-                       => "snow.svg",          // snow
+                       => "snow.png",
                     >= 95
-                       => "thunderstorms.svg", // thunderstorm
-                    _ => "sun-cloud.svg",
+                       => "thunderstorms.png",
+                    _ => "sun-cloud.png",
                 };
             }
-
-            // Default icon
-            return "sun-cloud.svg";
+            return "sun-cloud.png";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

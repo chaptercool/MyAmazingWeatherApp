@@ -9,6 +9,7 @@ using System.Windows.Input;
 using Microsoft.Maui.Controls;
 using MyAmazingWeatherApp.Models;
 using MyAmazingWeatherApp.Services;
+using MyAmazingWeatherApp.Converters;
 
 namespace MyAmazingWeatherApp.ViewModels
 {
@@ -27,7 +28,6 @@ namespace MyAmazingWeatherApp.ViewModels
                 await LoadWeatherAsync(city.Lat, city.Lon, city.Name));
         }
 
-        // INotifyPropertyChanged boilerplate
         public event PropertyChangedEventHandler PropertyChanged;
         protected bool SetProperty<T>(ref T backingField, T value,
                                      [CallerMemberName] string propName = null)
@@ -38,7 +38,6 @@ namespace MyAmazingWeatherApp.ViewModels
             return true;
         }
 
-        // — Bindable properties —
         string _cityName;
         public string CityName
         {
@@ -67,7 +66,6 @@ namespace MyAmazingWeatherApp.ViewModels
             set => SetProperty(ref _isDataStale, value);
         }
 
-        // ** New detail properties **
         string _uvIndex;
         public string UvIndex
         {
@@ -110,16 +108,11 @@ namespace MyAmazingWeatherApp.ViewModels
             set => SetProperty(ref _humidity, value);
         }
 
-
-
-        // Forecast collections
         public ObservableCollection<HourlyForecastItem> HourlyForecasts { get; }
         public ObservableCollection<DailyForecastItem> DailyForecasts { get; }
 
-        // Trigger load
         public ICommand LoadWeatherCommand { get; }
 
-        // Core loader
         async Task LoadWeatherAsync(double lat, double lon, string cityName)
         {
             CityName = cityName;
@@ -128,13 +121,10 @@ namespace MyAmazingWeatherApp.ViewModels
 
             IsDataStale = stale;
 
-            // Current temp
             CurrentTemperature = $"{forecast.Current.Temperature:0}°C";
 
-            // If you pull weathercode, you can fill CurrentCondition (string or code)
             CurrentCondition = "";
 
-            // Hourly (next 24h)
             HourlyForecasts.Clear();
             for (int i = 0; i < 24 && i < forecast.Hourly.Time.Length; i++)
             {
@@ -144,11 +134,10 @@ namespace MyAmazingWeatherApp.ViewModels
                 {
                     Time = dt.ToString("HH:mm"),
                     Temperature = $"{temp:0}°",
-                    Icon = "sun.svg" // swap in converter‐mapped icon
+                    Icon = "sun.png"
                 });
             }
 
-            // Daily (7‐day)
             DailyForecasts.Clear();
             for (int i = 0; i < forecast.Daily.Time.Length; i++)
             {
@@ -158,18 +147,13 @@ namespace MyAmazingWeatherApp.ViewModels
                     Day = dt.ToString("dddd"),
                     MinTemperature = $"{forecast.Daily.Temperature2mMin[i]:0}°",
                     MaxTemperature = $"{forecast.Daily.Temperature2mMax[i]:0}°",
-                    Icon = "sun-cloud.svg"
+                    Icon = "sun-cloud.png"
                 });
             }
 
-            // ** Populate new detail props **
-            // UV index is from today's daily uv_index_max (first element)
             UvIndex = $"{forecast.Daily.UvIndexMax[0]:0}";
-            // Apparent temperature (feels like)
             FeelsLike = $"{forecast.Current.FeelsLike:0}°C";
-            // Pressure in hPa
             Pressure = $"{forecast.Current.Pressure:0} hPa";
-            // Precipitation probability from today's daily max
             PrecipitationProbability = $"{forecast.Daily.PrecipitationProbabilityMax[0]:0}%";
             Humidity = $"{forecast.Current.Humidity:0}%";
             WindSpeed = $"{forecast.Current.Windspeed10m:0} km/h";
@@ -181,7 +165,6 @@ namespace MyAmazingWeatherApp.ViewModels
         }
     }
 
-    // DTOs for binding
     public class HourlyForecastItem
     {
         public string Time { get; set; }

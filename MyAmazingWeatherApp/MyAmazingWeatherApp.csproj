@@ -64,18 +64,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Include="Resources\Images\WeatherCounters\drop.svg" />
-	  <MauiImage Include="Resources\Images\WeatherCounters\leaves.svg" />
-	  <MauiImage Include="Resources\Images\WeatherCounters\glasses.svg" />
-	  <MauiImage Include="Resources\Images\WeatherCounters\sunrise.svg" />
-	  <MauiImage Include="Resources\Images\WeatherCounters\sunset.svg" />
-	  <MauiImage Include="Resources\Images\WeatherIcons\thunderstorms.svg" />
-	  <MauiImage Include="Resources\Images\WeatherIcons\rain.svg" />
-	  <MauiImage Include="Resources\Images\WeatherIcons\fog.svg" />
-	  <MauiImage Include="Resources\Images\WeatherIcons\fog_sun.svg" />
-	  <MauiImage Include="Resources\Images\WeatherIcons\sun.svg" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\drop.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\leaves.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\glasses.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\sunrise.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\sunset.png" />
+	  <MauiImage Include="Resources\Images\WeatherIcons\thunderstorms.png" />
+	  <MauiImage Include="Resources\Images\WeatherIcons\rain.png" />
+	  <MauiImage Include="Resources\Images\WeatherIcons\fog.png" />
+	  <MauiImage Include="Resources\Images\WeatherIcons\fog_sun.png" />
+	  <MauiImage Include="Resources\Images\WeatherIcons\sun.png" />
 	  <MauiImage Include="Resources\Images\WeatherIcons\snow.png" />
-	  <MauiImage Include="Resources\Images\WeatherIcons\wind.svg" />
+	  <MauiImage Include="Resources\Images\WeatherIcons\wind.png" />
 	</ItemGroup>
 
 	<ItemGroup>
