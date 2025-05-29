@@ -59,15 +59,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MyAmazingWeatherApp",
+              "Title": "MyAmazingWeatherApp.csproj",
               "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
               "RelativeDocumentMoniker": "MyAmazingWeatherApp.csproj",
               "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
               "RelativeToolTip": "MyAmazingWeatherApp.csproj",
               "ViewState": "AgIAADAAAAAAAAAAAADwv00AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-29T12:42:28.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:42:28.172Z"
             },
             {
               "$type": "Document",
@@ -103,8 +102,7 @@
               "RelativeToolTip": "Services\\WeatherService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T18:23:55.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T18:23:55.702Z"
             },
             {
               "$type": "Document",
@@ -141,8 +139,7 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-29T12:18:27.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:18:27.538Z"
             },
             {
               "$type": "Document",
@@ -154,8 +151,7 @@
               "RelativeToolTip": "ViewModels\\MainPageViewModel.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAswH0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T16:39:52.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T16:39:52.691Z"
             },
             {
               "$type": "Document",
@@ -167,8 +163,7 @@
               "RelativeToolTip": "Converters\\ConditionToIconConverter.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:22:58.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:22:58.029Z"
             },
             {
               "$type": "Document",
@@ -180,8 +175,7 @@
               "RelativeToolTip": "Models\\CurrentWeather.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:22:52.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T12:22:52.11Z"
             }
           ]
         }
