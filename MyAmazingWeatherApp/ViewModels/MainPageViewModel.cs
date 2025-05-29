@@ -17,6 +17,10 @@ namespace MyAmazingWeatherApp.ViewModels
     {
         readonly IWeatherService _weatherService;
 
+        private readonly ConditionToIconConverter _iconConverter = new();
+        private readonly WeatherCodeToDescriptionConverter _descriptionConverter = new();
+        private readonly ConditionToBrushConverter _brushConverter = new();
+
         public MainPageViewModel(IWeatherService weatherService)
         {
             _weatherService = weatherService;
@@ -108,6 +112,13 @@ namespace MyAmazingWeatherApp.ViewModels
             set => SetProperty(ref _humidity, value);
         }
 
+        private Brush _backgroundBrush;
+        public Brush BackgroundBrush
+        {
+            get => _backgroundBrush;
+            set => SetProperty(ref _backgroundBrush, value);
+        }
+
         public ObservableCollection<HourlyForecastItem> HourlyForecasts { get; }
         public ObservableCollection<DailyForecastItem> DailyForecasts { get; }
 
@@ -123,18 +134,42 @@ namespace MyAmazingWeatherApp.ViewModels
 
             CurrentTemperature = $"{forecast.Current.Temperature:0}°C";
 
-            CurrentCondition = "";
+            Debug.WriteLine($"Current weather code: {forecast.Current.WeatherCode}");
+            if (forecast.Hourly.WeatherCode != null && forecast.Hourly.WeatherCode.Length > 0)
+            {
+                Debug.WriteLine($"First hourly weather code: {forecast.Hourly.WeatherCode[0]}");
+            }
+            if (forecast.Daily.WeatherCode != null && forecast.Daily.WeatherCode.Length > 0)
+            {
+                Debug.WriteLine($"First daily weather code: {forecast.Daily.WeatherCode[0]}");
+            }
+
+            var currentWeatherCode = forecast.Current.WeatherCode;
+            CurrentCondition = currentWeatherCode.HasValue 
+                ? _descriptionConverter.Convert(currentWeatherCode.Value, typeof(string), null, null) as string 
+                : "Unknown";
+
+            BackgroundBrush = currentWeatherCode.HasValue 
+                ? _brushConverter.Convert(currentWeatherCode.Value, typeof(Brush), null, null) as Brush 
+                : _brushConverter.Convert("Default", typeof(Brush), null, null) as Brush;
 
             HourlyForecasts.Clear();
             for (int i = 0; i < 24 && i < forecast.Hourly.Time.Length; i++)
             {
                 var dt = DateTime.Parse(forecast.Hourly.Time[i]);
                 var temp = forecast.Hourly.Temperature2m[i];
+                
+                string icon = "sun.png";
+                if (forecast.Hourly.WeatherCode != null && i < forecast.Hourly.WeatherCode.Length)
+                {
+                    icon = _iconConverter.Convert(forecast.Hourly.WeatherCode[i], typeof(string), null, null) as string;
+                }
+                
                 HourlyForecasts.Add(new HourlyForecastItem
                 {
                     Time = dt.ToString("HH:mm"),
                     Temperature = $"{temp:0}°",
-                    Icon = "sun.png"
+                    Icon = icon
                 });
             }
 
@@ -142,12 +177,19 @@ namespace MyAmazingWeatherApp.ViewModels
             for (int i = 0; i < forecast.Daily.Time.Length; i++)
             {
                 var dt = DateTime.Parse(forecast.Daily.Time[i]);
+                
+                string icon = "sun_cloud.png";
+                if (forecast.Daily.WeatherCode != null && i < forecast.Daily.WeatherCode.Length)
+                {
+                    icon = _iconConverter.Convert(forecast.Daily.WeatherCode[i], typeof(string), null, null) as string;
+                }
+                
                 DailyForecasts.Add(new DailyForecastItem
                 {
                     Day = dt.ToString("dddd"),
                     MinTemperature = $"{forecast.Daily.Temperature2mMin[i]:0}°",
                     MaxTemperature = $"{forecast.Daily.Temperature2mMax[i]:0}°",
-                    Icon = "sun-cloud.png"
+                    Icon = icon
                 });
             }
 

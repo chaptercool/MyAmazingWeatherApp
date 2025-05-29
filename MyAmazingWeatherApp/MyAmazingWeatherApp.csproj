@@ -41,9 +41,52 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	  <Debugger>Native</Debugger>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-ios|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-maccatalyst|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	  <Debugger>Native</Debugger>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-ios|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-maccatalyst|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationTitle>My Amazing Weather App</ApplicationTitle>
+	  <ApplicationId>com.active.myamazingweatherapp</ApplicationId>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiImage Include="Resources\Images\WeatherIcons\cloud.png" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -59,16 +102,40 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\UiIcons\city.png" />
+	  <None Remove="Resources\Images\UiIcons\dots.png" />
+	  <None Remove="Resources\Images\UiIcons\plus_round.png" />
+	  <None Remove="Resources\Images\UiIcons\rows.png" />
+	  <None Remove="Resources\Images\UiIcons\Search.png" />
+	  <None Remove="Resources\Images\UiIcons\x_round.png" />
+	  <None Remove="Resources\Images\WeatherCounters\leaves.png" />
+	  <None Remove="Resources\Images\WeatherCounters\temp.png" />
+	  <None Remove="Resources\Images\WeatherCounters\temp2.png" />
+	  <None Remove="Resources\Images\WeatherCounters\umbrella.png" />
+	  <None Remove="Resources\Images\WeatherIcons\cloud.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.70" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.5" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Images\UiIcons\city.png" />
+	  <MauiImage Include="Resources\Images\UiIcons\dots.png" />
+	  <MauiImage Include="Resources\Images\UiIcons\plus_round.png" />
+	  <MauiImage Include="Resources\Images\UiIcons\rows.png" />
+	  <MauiImage Include="Resources\Images\UiIcons\search.png" />
+	  <MauiImage Include="Resources\Images\UiIcons\x_round.png" />
 	  <MauiImage Include="Resources\Images\WeatherCounters\drop.png" />
-	  <MauiImage Include="Resources\Images\WeatherCounters\leaves.png" />
 	  <MauiImage Include="Resources\Images\WeatherCounters\glasses.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\leaves.png" />
 	  <MauiImage Include="Resources\Images\WeatherCounters\sunrise.png" />
 	  <MauiImage Include="Resources\Images\WeatherCounters\sunset.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\temp.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\temp2.png" />
+	  <MauiImage Include="Resources\Images\WeatherCounters\umbrella.png" />
+	  <MauiImage Include="Resources\Images\WeatherIcons\sun_cloud.png" />
 	  <MauiImage Include="Resources\Images\WeatherIcons\thunderstorms.png" />
 	  <MauiImage Include="Resources\Images\WeatherIcons\rain.png" />
 	  <MauiImage Include="Resources\Images\WeatherIcons\fog.png" />
@@ -76,6 +143,21 @@
 	  <MauiImage Include="Resources\Images\WeatherIcons\sun.png" />
 	  <MauiImage Include="Resources\Images\WeatherIcons\snow.png" />
 	  <MauiImage Include="Resources\Images\WeatherIcons\wind.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>

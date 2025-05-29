@@ -14,15 +14,14 @@ namespace MyAmazingWeatherApp
             BindingContext = _vm = vm;
         }
 
-        protected override void OnAppearing() // Moved this method inside the class
+        protected override void OnAppearing()
         {
             base.OnAppearing();
-            // Example: default to Warsaw
             _vm.LoadWeatherCommand.Execute(new City
             {
-                Name = "Warsaw",
-                Lat = 52.2297,
-                Lon = 21.0122
+                Name = "Rzeszow",
+                Lat = 50.0333,
+                Lon = 22.0000
             });
         }
     }

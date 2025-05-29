@@ -15,17 +15,16 @@ namespace MyAmazingWeatherApp.Converters
                 {
                     "sunny" => "sun.png",
                     "clear" => "sun.png",
-                    "partly cloudy"
-                                 => "sun-cloud.png",
-                    "cloudy" => "fog_sun.png",
-                    "overcast" => "fog.png",
+                    "partly cloudy" => "sun_cloud.png",
+                    "cloudy" => "cloud.png",
+                    "overcast" => "cloud.png",
                     "rain" => "rain.png",
-                    "thunderstorms"
-                                 => "thunderstorms.png",
+                    "thunderstorms" => "thunderstorms.png",
                     "snow" => "snow.png",
                     "fog" => "fog.png",
                     "windy" => "wind.png",
-                    _ => "sun-cloud.png",
+                    "drizzle" => "rain.png",
+                    _ => "sun_cloud.png",
                 };
             }
 
@@ -34,9 +33,9 @@ namespace MyAmazingWeatherApp.Converters
                 return code switch
                 {
                     0 => "sun.png",
-                    1 => "sun-cloud.png",
-                    2 => "sun-cloud.png",
-                    3 => "fog.png",
+                    1 => "sun_cloud.png",
+                    2 => "sun_cloud.png",
+                    3 => "cloud.png",
                     >= 45 and <= 48
                        => "fog.png",
                     >= 51 and <= 57
@@ -47,10 +46,10 @@ namespace MyAmazingWeatherApp.Converters
                        => "snow.png",
                     >= 95
                        => "thunderstorms.png",
-                    _ => "sun-cloud.png",
+                    _ => "sun_cloud.png",
                 };
             }
-            return "sun-cloud.png";
+            return "sun_cloud.png";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

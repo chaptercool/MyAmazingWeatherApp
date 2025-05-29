@@ -18,5 +18,7 @@ namespace MyAmazingWeatherApp.Models
         [JsonPropertyName("temperature_2m_min")] public double[] Temperature2mMin { get; set; }
 
         [JsonPropertyName("precipitation_probability_max")] public double[] PrecipitationProbabilityMax { get; set; }
+
+        [JsonPropertyName("weather_code")] public int[] WeatherCode { get; set; }
     }
 }

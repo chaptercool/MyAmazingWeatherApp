@@ -29,9 +29,9 @@ namespace MyAmazingWeatherApp.Services
 
             var url = $"https://api.open-meteo.com/v1/forecast" +
                       $"?latitude={latS}&longitude={lonS}" +
-                      $"&daily=uv_index_max,temperature_2m_max,temperature_2m_min,precipitation_probability_max" +
-                      $"&hourly=temperature_2m" +
-                      $"&current=temperature_2m,relative_humidity_2m,apparent_temperature,pressure_msl,windspeed_10m";
+                      $"&daily=uv_index_max,temperature_2m_max,temperature_2m_min,precipitation_probability_max,weather_code" +
+                      $"&hourly=temperature_2m,weather_code" +
+                      $"&current=temperature_2m,relative_humidity_2m,apparent_temperature,pressure_msl,windspeed_10m,weather_code";
 
             try
             {

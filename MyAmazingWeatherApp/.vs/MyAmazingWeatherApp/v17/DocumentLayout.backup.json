@@ -7,36 +7,64 @@
       "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\myamazingweatherapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:myamazingweatherapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\converters\\conditiontoiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:converters\\conditiontoiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\models\\currentweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:models\\currentweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\converters\\conditiontobrushconveter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:converters\\conditiontobrushconveter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\converters\\conditiontoiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:converters\\conditiontoiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\resources\\data\\worldcities.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:resources\\data\\worldcities.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\converters\\weathercodetodescriptionconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:converters\\weathercodetodescriptionconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\models\\dailyweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:models\\dailyweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\models\\hourlyweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:models\\hourlyweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\models\\currentweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:models\\currentweather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\services\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:services\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\myamazingweatherapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:myamazingweatherapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|solutionrelative:models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7CE5992-3936-403D-95D8-E070E847641C}|MyAmazingWeatherApp.csproj|c:\\users\\yaroslav\\source\\repos\\counter\\myamazingweatherapp\\myamazingweatherapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,63 +86,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyAmazingWeatherApp.csproj",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
-              "RelativeDocumentMoniker": "MyAmazingWeatherApp.csproj",
-              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
-              "RelativeToolTip": "MyAmazingWeatherApp.csproj",
-              "ViewState": "AgIAADAAAAAAAAAAAADwv00AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-29T12:42:28.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "Models\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\WeatherForecast.cs",
-              "RelativeToolTip": "Models\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ConditionToBrushConveter.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\ConditionToBrushConveter.cs",
+              "RelativeDocumentMoniker": "Converters\\ConditionToBrushConveter.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\ConditionToBrushConveter.cs",
+              "RelativeToolTip": "Converters\\ConditionToBrushConveter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T18:33:48.385Z"
+              "WhenOpened": "2025-05-29T13:36:22.365Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "MauiProgram.cs",
-              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MauiProgram.cs",
-              "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MainPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\ViewModels\\MainPageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\ViewModels\\MainPageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainPageViewModel.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAiwJkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T18:29:21.559Z"
+              "WhenOpened": "2025-05-25T16:39:52.691Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeatherService.cs",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Services\\WeatherService.cs",
-              "RelativeDocumentMoniker": "Services\\WeatherService.cs",
-              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Services\\WeatherService.cs",
-              "RelativeToolTip": "Services\\WeatherService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T18:23:55.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T18:18:53.043Z"
+              "WhenOpened": "2025-05-25T18:18:53.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -122,16 +129,120 @@
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAqwIsAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MainPage.xaml*",
+              "RelativeToolTip": "MainPage.xaml*",
+              "ViewState": "AgIAALQAAAAAAAAAAAAowLkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-25T18:18:49.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-29T14:35:34.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConditionToIconConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\ConditionToIconConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\ConditionToIconConverter.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\ConditionToIconConverter.cs",
+              "RelativeToolTip": "Converters\\ConditionToIconConverter.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T12:22:58.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "worldcities.csv",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Resources\\Data\\worldcities.csv",
+              "RelativeDocumentMoniker": "Resources\\Data\\worldcities.csv",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Resources\\Data\\worldcities.csv",
+              "RelativeToolTip": "Resources\\Data\\worldcities.csv",
+              "ViewState": "AgIAAAsNAAAAAAAAAAAywBsNAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-05-29T14:19:17.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherCodeToDescriptionConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\WeatherCodeToDescriptionConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\WeatherCodeToDescriptionConverter.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\WeatherCodeToDescriptionConverter.cs",
+              "RelativeToolTip": "Converters\\WeatherCodeToDescriptionConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:58:47.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Services\\WeatherService.cs",
+              "RelativeDocumentMoniker": "Services\\WeatherService.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Services\\WeatherService.cs",
+              "RelativeToolTip": "Services\\WeatherService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAACEAAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:23:55.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DailyWeather.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\DailyWeather.cs",
+              "RelativeDocumentMoniker": "Models\\DailyWeather.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\DailyWeather.cs",
+              "RelativeToolTip": "Models\\DailyWeather.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAvwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:41:29.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HourlyWeather.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\HourlyWeather.cs",
+              "RelativeDocumentMoniker": "Models\\HourlyWeather.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\HourlyWeather.cs",
+              "RelativeToolTip": "Models\\HourlyWeather.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAhwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:41:20.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IWeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Services\\IWeatherService.cs",
+              "RelativeDocumentMoniker": "Services\\IWeatherService.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Services\\IWeatherService.cs",
+              "RelativeToolTip": "Services\\IWeatherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:32:41.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -143,39 +254,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\ViewModels\\MainPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\MainPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\ViewModels\\MainPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\MainPageViewModel.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAswH0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T16:39:52.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConditionToIconConverter.cs",
-              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\ConditionToIconConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\ConditionToIconConverter.cs",
-              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Converters\\ConditionToIconConverter.cs",
-              "RelativeToolTip": "Converters\\ConditionToIconConverter.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:22:58.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "CurrentWeather.cs",
               "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\CurrentWeather.cs",
               "RelativeDocumentMoniker": "Models\\CurrentWeather.cs",
               "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\CurrentWeather.cs",
               "RelativeToolTip": "Models\\CurrentWeather.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAnwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T12:22:52.11Z"
+              "WhenOpened": "2025-05-29T12:22:52.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:29:21.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Models\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\Models\\WeatherForecast.cs",
+              "RelativeToolTip": "Models\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:33:48.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MyAmazingWeatherApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
+              "RelativeDocumentMoniker": "MyAmazingWeatherApp.csproj",
+              "ToolTip": "C:\\Users\\Yaroslav\\source\\repos\\counter\\MyAmazingWeatherApp\\MyAmazingWeatherApp\\MyAmazingWeatherApp.csproj",
+              "RelativeToolTip": "MyAmazingWeatherApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-29T12:42:28.172Z",
+              "EditorCaption": ""
             }
           ]
         }

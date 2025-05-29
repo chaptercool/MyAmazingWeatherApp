@@ -15,5 +15,6 @@ namespace MyAmazingWeatherApp.Models
         [JsonPropertyName("apparent_temperature")] public double FeelsLike { get; set; }
         [JsonPropertyName("pressure_msl")] public double Pressure { get; set; }
         [JsonPropertyName("windspeed_10m")] public double Windspeed10m { get; set; }
+        [JsonPropertyName("weather_code")] public int? WeatherCode { get; set; }
     }
 }
